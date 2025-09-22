@@ -3,7 +3,7 @@ import "../css/Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-        <nav>
+        <nav className="contact-links">
             <h4>Contact me</h4>
             <a href="mailto:#">Email</a>
             <a href="#">Linkedin</a>

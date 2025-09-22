@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className='header'>
         <h3>Welcome to My Website</h3>
-        <nav>
+        <nav className='nav-links'>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>

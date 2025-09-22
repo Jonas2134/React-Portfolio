@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-content">
         <section>
           <h1>Vite + React</h1>
           <div className="card">
