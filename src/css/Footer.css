@@ -1,7 +1,3 @@
-.footer {
-    display: flex;
-}
-
 .contact-links {
     display: flex;
     flex-direction: column;
