@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="bg-bg text-text h-full">
       <Header />
       <main className="main-content inline-grid grid-cols-3 gap-4 text-center">
         <span>01</span>
@@ -40,7 +40,7 @@ function App() {
         <span>30</span>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

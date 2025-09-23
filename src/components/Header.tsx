@@ -5,7 +5,7 @@ import "../css/Header.css";
 
 function Header() {
   return (
-    <header className="header flex justify-between">
+    <header className="header flex justify-around items-center">
       <Logo className="h-10" />
       <nav className="flex gap-6">
         <a href="#about">About</a>

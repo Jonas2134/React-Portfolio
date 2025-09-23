@@ -2,18 +2,34 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
+@theme {
+  --color-bg: #e7e9df;
+  --color-text: #1f2937;
+  --color-primary: #87acb0;
+  --color-secondary: #dadfc9;
+  --color-accent: #10b981;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@layer theme {
+  :root {
+    @variant dark {
+      --color-bg: #2f4858;
+      --color-text: #f3f4f6;
+      --color-primary: #bde4e8;
+      --color-secondary: #007688;
+      --color-accent: #059669;
+    }
+  }
 }
 
 body, html {
   margin: 0;
   font-size: 1em;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 h1 {

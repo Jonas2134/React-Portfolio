@@ -29,10 +29,19 @@ const DarkModeSwitch = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="p-2 rounded bg-primary text-bg flex items-center gap-2"
+      className="p-2 rounded bg-secondary text-text flex items-center gap-2"
     >
-      {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-      <span>{theme === "dark" ? "Light" : "Dark"}</span>
+      {theme === "dark" ? (
+        <>
+          <Moon size={18} />
+          <span>Dark</span>
+        </>
+      ) : (
+        <>
+          <Sun size={18} />
+          <span>Light</span>
+        </>
+      )}
     </button>
   );
 };
