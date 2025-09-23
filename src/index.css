@@ -5,8 +5,10 @@
 @theme {
   --color-bg: #e7e9df;
   --color-text: #1f2937;
+  --color-text-rgb: 31, 41, 55;
   --color-primary: #87acb0;
-  --color-secondary: #dadfc9;
+  --color-switch: #dadfc9;
+  --color-hover-switch: #c9cfb2;
   --color-accent: #10b981;
 }
 
@@ -15,11 +17,23 @@
     @variant dark {
       --color-bg: #2f4858;
       --color-text: #f3f4f6;
+      --color-text-rgb: 243, 244, 246;
       --color-primary: #bde4e8;
-      --color-secondary: #007688;
+      --color-switch: #007688;
+      --color-hover-switch: #00919e;
       --color-accent: #059669;
     }
   }
+}
+
+@layer utilities {
+  .header-shadow {
+    box-shadow: 0 1px 0 0 rgba(var(--color-text-rgb), 0.2);
+  }
+}
+
+:root {
+  --card-transition: all 0.3s ease-in-out;
 }
 
 body, html {

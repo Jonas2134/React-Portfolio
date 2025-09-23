@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="bg-bg text-text h-full">
       <Header />
-      <main className="main-content inline-grid grid-cols-3 gap-4 text-center">
+      <main className="max-w-7xl w-full mx-auto mt-22 inline-grid grid-cols-3 gap-4 text-center p-6.25">
         <span>01</span>
         <span>02</span>
         <span>03</span>

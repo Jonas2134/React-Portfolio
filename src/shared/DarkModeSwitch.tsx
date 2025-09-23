@@ -29,7 +29,8 @@ const DarkModeSwitch = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="p-2 rounded bg-secondary text-text flex items-center gap-2"
+      className="p-2 rounded-2xl bg-switch hover:bg-hover-switch text-text flex items-center gap-2"
+      style={{ transition: "var(--card-transition)" }}
     >
       {theme === "dark" ? (
         <>

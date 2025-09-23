@@ -5,13 +5,13 @@ import "../css/Header.css";
 
 function Header() {
   return (
-    <header className="header flex justify-around items-center">
+    <header className="header-shadow fixed w-full flex justify-around items-center px-10 py-6">
       <Logo className="h-10" />
       <nav className="flex gap-6">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a className="hover:border-b-1" style={{ transition: "var(--card-transition)" }} href="#about">About</a>
+        <a className="hover:border-b-1" style={{ transition: "var(--card-transition)" }} href="#skills">Skills</a>
+        <a className="hover:border-b-1" style={{ transition: "var(--card-transition)" }} href="#projects">Projects</a>
+        <a className="hover:border-b-1" style={{ transition: "var(--card-transition)" }} href="#contact">Contact</a>
       </nav>
       <DarkModeSwitch />
     </header>
