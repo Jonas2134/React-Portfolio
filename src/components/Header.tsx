@@ -1,9 +1,11 @@
+import Logo from '../assets/img/logo.svg?react'
+
 import '../css/Header.css'
 
 function Header() {
   return (
     <header className='header flex justify-between'>
-        <h3>Welcome to My Website</h3>
+        <Logo className='h-10' />
         <nav className='nav-links'>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
