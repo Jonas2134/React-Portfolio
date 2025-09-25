@@ -17,18 +17,19 @@ function getAge(): number {
 
 const About = () => {
   return (
-    <aside className="flex gap-4 rounded-4xl inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md p-7">
-      <section className="max-w-md">
-        <h2>Hi, i'm Jonas 👋</h2>
+    <section className="flex gap-4 rounded-4xl inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md p-7">
+      <img src={picture} alt="My Picture" className="rounded-4xl h-56" />
+      <aside className="max-w-sm">
+        <h2>About me</h2>
         <p>
+          My Name is Jonas Stiefer.{" "}
           I'm <strong>{getAge()}</strong> years old and i'm an emerging{" "}
           <strong>Web-Full-Stack Developer!</strong> <br />I come from{" "}
           <strong>Luxembourg</strong> and i'm motivated to take on your
           challenges.
         </p>
-      </section>
-      <img src={picture} alt="My Picture" className="rounded-4xl h-56" />
-    </aside>
+      </aside>
+    </section>
   );
 };
 

@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <section>
-      <h2>My Skills</h2>
+      <h2 className="text-orange-500">My Skills</h2>
       <ul>
         <li>JavaScript</li>
         <li>React</li>
