@@ -1,12 +1,14 @@
+import { skills } from "../data/skills"
+import { SkillCard } from "./SkillCard";
+
 const Skills = () => {
   return (
-    <section>
+    <section className="flex flex-col items-center gap-4">
       <h2 className="text-orange-500">My Skills</h2>
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>CSS</li>
-        <li>Node.js</li>
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        {skills.map((skill) => (
+          <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
+        ))}
       </ul>
     </section>
   );
