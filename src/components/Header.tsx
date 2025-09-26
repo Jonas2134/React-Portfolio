@@ -1,5 +1,5 @@
 import Logo from "../assets/img/logo.svg?react";
-import DarkModeSwitch from "../shared/DarkModeSwitch";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 import "../css/Header.css";
 
