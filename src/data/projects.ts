@@ -11,12 +11,12 @@ export const frontendProjects = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
     link: "#",
   },
-//   {
-//     id: 3,
-//     name: "",
-//     description: "",
-//     link: "",
-//   },
+  {
+    id: 3,
+    name: "DABubble",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    link: "#",
+  },
 //   {
 //     id: 4,
 //     name: "",
