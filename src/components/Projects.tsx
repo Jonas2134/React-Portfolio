@@ -15,15 +15,15 @@ const Projects = () => {
 
       <nav
         aria-label="Project categories"
-        className="grid grid-cols-2 divide-x-1 w-full shadow-bottom"
+        className="grid grid-cols-2 divide-x divide-(--color-text-rgba) border-b-1 border-(--color-text-rgba) w-full"
       >
         <button
           aria-controls="projects-list"
           aria-selected={activeTab === "frontend"}
           onClick={() => setActiveTab("frontend")}
-          className={`px-4 py-2 rounded-tl-lg text-text hover:bg-btn-nav-hover hover:cursor-pointer ${
+          className={`px-4 py-2 rounded-tl-lg text-text transition hover:bg-[rgba(0,0,0,0.04)] hover:cursor-pointer ${
             activeTab === "frontend"
-              ? "bg-[rgba(0, 0, 0, 0.8)]"
+              ? "bg-[rgba(0,0,0,0.06)] hover:bg-[rgba(0,0,0,0.08)]"
               : "bg-transparent"
           }`}
         >
@@ -34,9 +34,9 @@ const Projects = () => {
           aria-controls="projects-list"
           aria-selected={activeTab === "backend"}
           onClick={() => setActiveTab("backend")}
-          className={`px-4 py-2 rounded-tr-lg text-text hover:bg-btn-nav-hover hover:cursor-pointer ${
+          className={`px-4 py-2 rounded-tr-lg text-text transition hover:bg-[rgba(0,0,0,0.04)] hover:cursor-pointer ${
             activeTab === "backend"
-              ? "bg-amber-900"
+              ? "bg-[rgba(0,0,0,0.06)] hover:bg-[rgba(0,0,0,0.08)]"
               : "bg-transparent"
           }`}
         >
