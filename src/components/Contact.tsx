@@ -1,8 +1,14 @@
+import ContactNav from "./ContactNav"
+import EmailForm from "./EmailForm"
+
 const Contact = () => {
   return (
     <section>
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <h2 className="text-orange-500">Get in Touch</h2>
+        <div>
+          <ContactNav />
+          <EmailForm />
+        </div>
     </section>
   )
 }
