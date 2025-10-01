@@ -19,40 +19,68 @@ const EmailForm = () => {
       setStatus("success");
       form.current.reset();
     } catch (error) {
-      console.log(error)
+      console.log(error);
       setStatus("error");
     }
   };
 
   return (
-    <section>
-      <h3>Contact me directly</h3>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
-        <label htmlFor="">Name</label>
-        <input
-          type="text"
-          className="border p-2 rounded"
-          name="user_name"
-          required
-        />
+    <section className="py-5 px-10 rounded-4xl shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md hover:shadow-lg">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="w-full"
+        aria-label="Contact form"
+      >
+        <fieldset className="flex flex-col gap-6">
+          <legend className="text-2xl text-rose-500 font-semibold mb-6 underline">
+            Contact me directly
+          </legend>
 
-        <label htmlFor="">Email</label>
-        <input
-          type="email"
-          className="border p-2 rounded"
-          name="user_email"
-          required
-        />
+          <div className="flex flex-col gap-1">
+            <label className="text-left" htmlFor="user_name">
+              What's your name?
+            </label>
+            <input
+              type="text"
+              className="border p-2 rounded placeholder:text-gray-500 focus:placeholder:text-current dark:placeholder:text-gray-300"
+              id="user_name"
+              name="user_name"
+              placeholder="Your name goes here"
+              required
+            />
+          </div>
 
-        <label htmlFor="">Message</label>
-        <textarea
-          name="message"
-          className="border p-2 rounded"
-          rows={5}
-          required
-        />
+          <div className="flex flex-col gap-1">
+            <label className="text-left" htmlFor="user_email">
+              What's your email?
+            </label>
+            <input
+              type="email"
+              className="border p-2 rounded placeholder:text-gray-500 focus:placeholder:text-current dark:placeholder:text-gray-300"
+              id="user_email"
+              name="user_email"
+              placeholder="youremail@email.com"
+              required
+            />
+          </div>
 
-        <input type="submit" value="Send" />
+          <div className="flex flex-col gap-1">
+            <label className="text-left" htmlFor="message">
+              How can I help you?
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              className="border p-2 rounded placeholder:text-gray-500 focus:placeholder:text-current dark:placeholder:text-gray-300"
+              rows={5}
+              placeholder="Hello Jonas, I am interested in..."
+              required
+            />
+          </div>
+        </fieldset>
+
+        <input className="mt-6" type="submit" value="Send" />
       </form>
 
       {status === "success" && (
