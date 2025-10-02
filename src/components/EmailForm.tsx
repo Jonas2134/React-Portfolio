@@ -26,7 +26,7 @@ const EmailForm = () => {
   };
 
   return (
-    <section className="py-5 px-10 rounded-4xl shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md">
+    <section className="py-10 px-6 rounded-4xl shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md">
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -81,7 +81,7 @@ const EmailForm = () => {
           </div>
         </fieldset>
 
-        <button className="flex items-center gap-2 mt-6 border px-4 py-2 rounded-2xl " type="submit">
+        <button className="flex items-center gap-2 mt-6 border px-4 py-2 rounded hover:scale-101 hover:shadow-lg hover:cursor-pointer" type="submit">
           Get in touch with me
           <SendHorizontal className="w-5 h-5" />
         </button>
