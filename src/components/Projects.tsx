@@ -60,7 +60,7 @@ const Projects = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 dark:text-blue-400 transition hover:underline"
             >
               <strong>View on GitHub</strong>
             </a>

@@ -18,10 +18,8 @@ function App() {
         <Header />
         <main className="max-w-7xl w-full mx-auto mt-27 inline-grid grid-cols-1 gap-8 text-center p-6.25">
           <Hero />
-          <div className="inline-grid grid-cols-2 gap-8">
-            <About />
-            <Skills />
-          </div>
+          <About />
+          <Skills />
           <Projects />
           <Contact />
         </main>
