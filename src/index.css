@@ -42,12 +42,16 @@
   select:-internal-autofill-selected:hover,
   select:-internal-autofill-selected:focus {
     font-family: inherit !important;
-    -webkit-text-fill-color: inherit !important;
+    -webkit-text-fill-color: currentColor !important;
     color: inherit !important;
+
+    background-color: transparent !important;
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
     box-shadow: 0 0 0px 1000px transparent inset !important;
-    transition: background-color 9999s ease-in-out 0s !important;
-    background-color: transparent !important;
+
+    border: 1px solid currentColor !important;
+
+    transition: background-color 9999s ease-in-out 0s, color 9999s ease-in-out 0s !important;
   }
 }
 
