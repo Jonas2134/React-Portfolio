@@ -52,18 +52,29 @@ const Projects = () => {
         {projects.map((project) => (
           <article
             key={project.id}
-            className="flex flex-col items-center gap-4 p-4 rounded-4xl shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
+            className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded-4xl shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
           >
+            <img src={project.screen_shot} className="border border-(--color-text-rgba) rounded-2xl" alt="Projekt Screen Shot" />
             <h3 className="underline text-orange-500">{project.name}</h3>
             <p className="leading-5">{project.description}</p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 transition hover:underline"
-            >
-              <strong>View on GitHub</strong>
-            </a>
+            <nav className="flex justify-around w-full mt-2">
+              <a
+                href={project.github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 transition hover:underline"
+              >
+                <strong>View on GitHub</strong>
+              </a>
+              <a
+                href={project.live_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 transition hover:underline"
+              >
+                <strong>View Live!</strong>
+              </a>
+            </nav>
           </article>
         ))}
       </section>
