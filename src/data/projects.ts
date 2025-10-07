@@ -23,12 +23,6 @@ export const frontendProjects = [
     live_link: "#",
     screen_shot: "#",
   },
-//   {
-//     id: 4,
-//     name: "",
-//     description: "",
-//     link: "",
-//   },
 ];
 
 export const backendProjects = [
