@@ -56,7 +56,6 @@ const ProjectCard = ({
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<"frontend" | "backend">( "frontend" );
-
   const projects = activeTab === "frontend" ? frontendProjects : backendProjects;
 
   return (
