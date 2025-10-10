@@ -18,7 +18,7 @@ function getAge(): number {
 
 const About = () => {
   return (
-    <section className="flex justify-center gap-4 rounded-4xl inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md p-7">
+    <section className="flex justify-center gap-4 rounded inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md p-7">
       <img src={picture} alt="My Picture" className="rounded-4xl h-56" />
       <aside className="max-w-lg flex flex-col items-center gap-4">
         <h2>About me</h2>
