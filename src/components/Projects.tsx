@@ -22,11 +22,11 @@ const ProjectCard = ({
     <>
       <article
         key={id}
-        className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded-4xl shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
+        className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
       >
         <img
           src={screen_shot}
-          className="border border-(--color-text-rgba) rounded-2xl"
+          className="border border-(--color-text-rgba) rounded"
           alt="Projekt Screen Shot"
         />
         <h3 className="underline text-orange-500">{name}</h3>
@@ -57,10 +57,11 @@ const ProjectCard = ({
 const Projects = () => {
   const [activeTab, setActiveTab] = useState<"frontend" | "backend">( "frontend" );
   const projects = activeTab === "frontend" ? frontendProjects : backendProjects;
+  const headline = "<My Projects />";
 
   return (
     <section className="flex flex-col items-center gap-6">
-      <h2 id="projects-title">My Projects</h2>
+      <h2 id="projects-title">{headline}</h2>
 
       <nav
         aria-label="Project categories"
@@ -70,7 +71,7 @@ const Projects = () => {
           aria-controls="projects-list"
           aria-selected={activeTab === "frontend"}
           onClick={() => setActiveTab("frontend")}
-          className={`px-4 py-2 rounded-tl-lg text-text transition hover:bg-[rgba(0,0,0,0.04)] hover:cursor-pointer ${
+          className={`px-4 py-2 rounded-tl text-text transition hover:bg-[rgba(0,0,0,0.04)] hover:cursor-pointer ${
             activeTab === "frontend"
               ? "bg-[rgba(0,0,0,0.06)] hover:bg-[rgba(0,0,0,0.08)]"
               : "bg-transparent"
@@ -83,7 +84,7 @@ const Projects = () => {
           aria-controls="projects-list"
           aria-selected={activeTab === "backend"}
           onClick={() => setActiveTab("backend")}
-          className={`px-4 py-2 rounded-tr-lg text-text transition hover:bg-[rgba(0,0,0,0.04)] hover:cursor-pointer ${
+          className={`px-4 py-2 rounded-tr text-text transition hover:bg-[rgba(0,0,0,0.04)] hover:cursor-pointer ${
             activeTab === "backend"
               ? "bg-[rgba(0,0,0,0.06)] hover:bg-[rgba(0,0,0,0.08)]"
               : "bg-transparent"

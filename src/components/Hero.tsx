@@ -5,7 +5,7 @@ const Hero = () => {
   const passion = "<Specializing in crafting modern, responsive and user-friendly Frontends and making safety and scalable Backends. />";
 
   return (
-    <section className="relative flex items-center justify-center py-30 w-full border-y-1 border-text-rgba">
+    <section className="relative flex items-center justify-center py-35 w-full border-y-1 border-text-rgba">
       <MatrixBackground />
       <main className="flex flex-col items-center justify-center px-4">
         <h3>{greetings}</h3>

@@ -52,7 +52,7 @@ const MatrixBackground = () => {
 
   return (
     <>
-      <canvas ref={canvasRef} className="absolute -z-1 w-full h-auto" />
+      <canvas ref={canvasRef} className="absolute -z-1 w-full h-full" />
     </>
   )
 }
