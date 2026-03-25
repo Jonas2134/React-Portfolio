@@ -22,7 +22,7 @@ const ProjectCard = ({
     <>
       <article
         key={id}
-        className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
+        className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-card backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
       >
         <img
           src={screen_shot}

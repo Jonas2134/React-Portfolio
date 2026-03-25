@@ -1,9 +1,7 @@
-import "../css/Footer.css";
-
 function Footer() {
   return (
     <footer className="flex justify-around items-end">
-        <nav className="contact-links">
+        <nav className="flex flex-col">
             <h4>Contact me</h4>
             <a href="mailto:#">Email</a>
             <a href="#">Linkedin</a>

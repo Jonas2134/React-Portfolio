@@ -7,8 +7,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import AnimatedBackground from "./components/AnimatedBackground";
 
-import "./css/App.css";
-
 function App() {
   return (
     <div className="text-text h-full transition-all">

@@ -7,11 +7,11 @@ const Hero = () => {
   return (
     <section className="relative flex items-center justify-center py-35 w-full border-y-1 border-text-rgba">
       <MatrixBackground />
-      <main className="flex flex-col items-center justify-center px-4">
+      <div className="flex flex-col items-center justify-center px-4">
         <h3>{greetings}</h3>
         <h1 className="text-orange-500">Web-Full-Stack Developer</h1>
         <p>{passion}</p>
-      </main>
+      </div>
     </section>
   );
 };

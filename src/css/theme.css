@@ -1,0 +1,29 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-bg: #e7e9df;
+  --color-text: #1f2937;
+  --color-text-rgba: rgba(31, 41, 55, 0.2);
+  --color-switch: #dadfc9;
+  --color-hover-switch: #c9cfb2;
+  --color-terminal-bg: rgba(50, 50, 50, 0.85);
+  --color-terminal-text: #1f7a1f;
+  --color-terminal-border: #3fa33f;
+  --color-terminal-prompt: #2ecc71;
+}
+
+@layer theme {
+  :root {
+    @variant dark {
+      --color-bg: #2f4858;
+      --color-text: #f3f4f6;
+      --color-text-rgba: rgba(243, 244, 246, 0.2);
+      --color-switch: #007688;
+      --color-hover-switch: #00919e;
+      --color-terminal-bg: rgba(0, 15, 10, 0.85);
+      --color-terminal-text: #4ef14e;
+      --color-terminal-border: #1fa11f;
+      --color-terminal-prompt: #6eff9c;
+    }
+  }
+}
