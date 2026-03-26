@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { SendHorizontal, LoaderCircle } from "lucide-react";
 import Toast, { type ToastType } from "./Toast";
 
 const EmailForm = () => {
+  const { t } = useTranslation();
   const formRef = useRef<HTMLFormElement>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -38,12 +40,12 @@ const EmailForm = () => {
       setMessage("");
       setToast({
         variant: "success",
-        message: "Deine Nachricht wurde gesendet!",
+        message: t("contact.successToast"),
       });
     } catch {
       setToast({
         variant: "error",
-        message: "Fehler beim Senden — bitte erneut versuchen.",
+        message: t("contact.errorToast"),
       });
     } finally {
       setLoading(false);
@@ -57,72 +59,72 @@ const EmailForm = () => {
           ref={formRef}
           onSubmit={sendEmail}
           className="w-full"
-          aria-label="Contact form"
+          aria-label={t("contact.formLabel")}
         >
           <fieldset className="flex flex-col gap-4">
             <legend className="text-2xl text-rose-500 font-semibold mb-6 underline">
-              Contact me directly
+              {t("contact.formHeadline")}
             </legend>
 
             <div className="flex flex-col gap-1">
               <label className="text-left" htmlFor="user_name">
-                What's your name?
+                {t("contact.nameLabel")}
               </label>
               <input
                 type="text"
                 className="border p-2 rounded placeholder:text-gray-500 focus:placeholder:text-current dark:placeholder:text-gray-400 hover:shadow-lg focus:shadow-lg"
                 id="user_name"
                 name="user_name"
-                placeholder="Your name goes here"
+                placeholder={t("contact.namePlaceholder")}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
               />
               {!nameValid && name.length > 0 && (
                 <small className="text-red-500 text-left mt-1">
-                  Der Name muss mindestens 2 Zeichen haben.
+                  {t("contact.nameError")}
                 </small>
               )}
             </div>
 
             <div className="flex flex-col gap-1">
               <label className="text-left" htmlFor="user_email">
-                What's your email?
+                {t("contact.emailLabel")}
               </label>
               <input
                 type="email"
                 className="border p-2 rounded placeholder:text-gray-500 focus:placeholder:text-current dark:placeholder:text-gray-400 hover:shadow-lg focus:shadow-lg"
                 id="user_email"
                 name="user_email"
-                placeholder="youremail@email.com"
+                placeholder={t("contact.emailPlaceholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
               {!emailValid && email.length > 0 && (
                 <small className="text-red-500 text-left mt-1">
-                  Bitte eine gültige Email eingeben.
+                  {t("contact.emailError")}
                 </small>
               )}
             </div>
 
             <div className="flex flex-col gap-1">
               <label className="text-left" htmlFor="message">
-                How can I help you?
+                {t("contact.messageLabel")}
               </label>
               <textarea
                 id="message"
                 name="message"
                 className="border p-2 rounded placeholder:text-gray-500 focus:placeholder:text-current dark:placeholder:text-gray-400 hover:shadow-lg focus:shadow-lg"
                 rows={5}
-                placeholder="Hello Jonas, I am interested in..."
+                placeholder={t("contact.messagePlaceholder")}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
               />
               {!messageValid && message.length > 0 && (
                 <small className="text-red-500 text-left mt-1">
-                  Die Nachricht muss mindestens 10 Zeichen haben.
+                  {t("contact.messageError")}
                 </small>
               )}
             </div>
@@ -137,7 +139,7 @@ const EmailForm = () => {
                 : "opacity-50 cursor-not-allowed"
             }`}
           >
-            Get in touch with me
+            {t("contact.submitButton")}
             {loading ? (
               <LoaderCircle className="w-5 h-5 animate-spin" />
             ) : (

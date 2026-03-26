@@ -2,7 +2,7 @@ export const frontendProjects = [
   {
     id: 1,
     name: "Join",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.frontendJoinDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "/img/join-screen.png",
@@ -10,7 +10,7 @@ export const frontendProjects = [
   {
     id: 2,
     name: "Sharkie",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.frontendSharkieDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "/img/sharkie-screen.png",
@@ -18,7 +18,7 @@ export const frontendProjects = [
   {
     id: 3,
     name: "DABubble",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.frontendDabubbleDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "#",
@@ -29,7 +29,7 @@ export const backendProjects = [
   {
     id: 1,
     name: "Kanmind",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.backendKanmindDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "#",
@@ -37,7 +37,7 @@ export const backendProjects = [
   {
     id: 2,
     name: "Coderr",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.backendCoderrDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "#",
@@ -45,7 +45,7 @@ export const backendProjects = [
   {
     id: 3,
     name: "Quizly",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.backendQuizlyDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "#",
@@ -53,7 +53,7 @@ export const backendProjects = [
   {
     id: 4,
     name: "Videoflix",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, deserunt. Nobis nesciunt unde quia aut eum repudiandae, deserunt illo at delectus, officia, nemo itaque quibusdam officiis eveniet architecto molestiae incidunt?",
+    descriptionKey: "projects.backendVideoflixDesc",
     githubLink: "#",
     liveLink: "#",
     screenShot: "#",

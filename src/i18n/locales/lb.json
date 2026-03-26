@@ -1,0 +1,74 @@
+{
+  "header": {
+    "about": "TODO",
+    "skills": "TODO",
+    "projects": "TODO",
+    "contact": "TODO"
+  },
+  "hero": {
+    "greeting": "TODO",
+    "passion": "TODO",
+    "role": "TODO"
+  },
+  "about": {
+    "headline": "TODO",
+    "text": "TODO",
+    "cvButton": "TODO",
+    "portraitAlt": "TODO"
+  },
+  "skills": {
+    "headline": "TODO"
+  },
+  "projects": {
+    "headline": "TODO",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "viewGithub": "TODO",
+    "viewLive": "TODO",
+    "screenshotAlt": "TODO {{name}}",
+    "categoryLabel": "TODO",
+    "frontendJoinDesc": "TODO",
+    "frontendSharkieDesc": "TODO",
+    "frontendDabubbleDesc": "TODO",
+    "backendKanmindDesc": "TODO",
+    "backendCoderrDesc": "TODO",
+    "backendQuizlyDesc": "TODO",
+    "backendVideoflixDesc": "TODO"
+  },
+  "contact": {
+    "headline": "TODO",
+    "togetherHeadline": "TODO",
+    "togetherText": "TODO",
+    "socialLabel": "TODO",
+    "formLabel": "TODO",
+    "formHeadline": "TODO",
+    "nameLabel": "TODO",
+    "namePlaceholder": "TODO",
+    "nameError": "TODO",
+    "emailLabel": "TODO",
+    "emailPlaceholder": "TODO",
+    "emailError": "TODO",
+    "messageLabel": "TODO",
+    "messagePlaceholder": "TODO",
+    "messageError": "TODO",
+    "submitButton": "TODO",
+    "successToast": "TODO",
+    "errorToast": "TODO"
+  },
+  "footer": {
+    "contactHeadline": "TODO",
+    "email": "Email",
+    "linkedin": "Linkedin",
+    "github": "GitHub",
+    "copyright": "TODO"
+  },
+  "darkMode": {
+    "switchToLight": "TODO",
+    "switchToDark": "TODO"
+  },
+  "aria": {
+    "logo": "TODO",
+    "mainNav": "TODO",
+    "footerNav": "TODO"
+  }
+}

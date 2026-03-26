@@ -1,0 +1,74 @@
+{
+  "header": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "<Hi, i'm Jonas \ud83d\udc4b>",
+    "passion": "<Specializing in crafting modern, responsive and user-friendly Frontends and making safety and scalable Backends. />",
+    "role": "Web-Full-Stack Developer"
+  },
+  "about": {
+    "headline": "<About me />",
+    "text": "My Name is Jonas Stiefer. I'm <strong>{{age}}</strong> years old and i'm an emerging <strong>Web-Full-Stack Developer!</strong> <br/>I come from <strong>Luxembourg</strong> and i'm motivated to take on your challenges.",
+    "cvButton": "To my CV",
+    "portraitAlt": "Portrait of the developer"
+  },
+  "skills": {
+    "headline": "<My Skills />"
+  },
+  "projects": {
+    "headline": "<My Projects />",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "viewGithub": "View on GitHub",
+    "viewLive": "View Live!",
+    "screenshotAlt": "Screenshot of {{name}}",
+    "categoryLabel": "Project categories",
+    "frontendJoinDesc": "TODO",
+    "frontendSharkieDesc": "TODO",
+    "frontendDabubbleDesc": "TODO",
+    "backendKanmindDesc": "TODO",
+    "backendCoderrDesc": "TODO",
+    "backendQuizlyDesc": "TODO",
+    "backendVideoflixDesc": "TODO"
+  },
+  "contact": {
+    "headline": "<Get in Touch />",
+    "togetherHeadline": "Let's work together",
+    "togetherText": "I am always happy to make new contacts and take on exciting projects. Just send me a message using the form or connect with me on Linkedin or Email.",
+    "socialLabel": "Social links",
+    "formLabel": "Contact form",
+    "formHeadline": "Contact me directly",
+    "nameLabel": "What's your name?",
+    "namePlaceholder": "Your name goes here",
+    "nameError": "Name must be at least 2 characters.",
+    "emailLabel": "What's your email?",
+    "emailPlaceholder": "youremail@email.com",
+    "emailError": "Please enter a valid email.",
+    "messageLabel": "How can I help you?",
+    "messagePlaceholder": "Hello, I am interested in...",
+    "messageError": "Message must be at least 10 characters.",
+    "submitButton": "Get in touch with me",
+    "successToast": "Your message has been sent!",
+    "errorToast": "Error sending — please try again."
+  },
+  "footer": {
+    "contactHeadline": "Contact me",
+    "email": "Email",
+    "linkedin": "Linkedin",
+    "github": "GitHub",
+    "copyright": "\u00a9 2025 Jonas Stiefer. All rights reserved."
+  },
+  "darkMode": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "aria": {
+    "logo": "Portfolio logo",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer navigation"
+  }
+}

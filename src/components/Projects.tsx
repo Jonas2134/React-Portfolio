@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { frontendProjects, backendProjects } from "../data/projects";
 
 type ProjectCardProps = {
   id: number;
   name: string;
-  description: string;
+  descriptionKey: string;
   screenShot: string;
   githubLink: string;
   liveLink: string;
@@ -13,11 +14,13 @@ type ProjectCardProps = {
 const ProjectCard = ({
   id,
   name,
-  description,
+  descriptionKey,
   screenShot,
   githubLink,
   liveLink,
 }: ProjectCardProps) => {
+  const { t } = useTranslation();
+
   return (
       <article
         key={id}
@@ -26,11 +29,11 @@ const ProjectCard = ({
         <img
           src={screenShot}
           className="border border-(--color-text-rgba) rounded"
-          alt={`Screenshot of ${name}`}
+          alt={t("projects.screenshotAlt", { name })}
           loading="lazy"
         />
         <h3 className="underline text-orange-500">{name}</h3>
-        <p className="leading-5">{description}</p>
+        <p className="leading-5">{t(descriptionKey)}</p>
         <nav className="flex justify-around w-full mt-2">
           <a
             href={githubLink}
@@ -38,7 +41,7 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 transition hover:underline"
           >
-            <strong>View on GitHub</strong>
+            <strong>{t("projects.viewGithub")}</strong>
           </a>
           <a
             href={liveLink}
@@ -46,7 +49,7 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 transition hover:underline"
           >
-            <strong>View Live!</strong>
+            <strong>{t("projects.viewLive")}</strong>
           </a>
         </nav>
       </article>
@@ -54,16 +57,16 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<"frontend" | "backend">( "frontend" );
   const projects = activeTab === "frontend" ? frontendProjects : backendProjects;
-  const headline = "<My Projects />";
 
   return (
     <section id="projects" className="flex flex-col items-center gap-6">
-      <h2 id="projects-title">{headline}</h2>
+      <h2 id="projects-title">{t("projects.headline")}</h2>
 
       <nav
-        aria-label="Project categories"
+        aria-label={t("projects.categoryLabel")}
         className="grid grid-cols-2 divide-x divide-(--color-text-rgba) border-b-1 border-(--color-text-rgba) w-full"
       >
         <button
@@ -76,7 +79,7 @@ const Projects = () => {
               : "bg-transparent"
           }`}
         >
-          Frontend
+          {t("projects.frontend")}
         </button>
 
         <button
@@ -89,7 +92,7 @@ const Projects = () => {
               : "bg-transparent"
           }`}
         >
-          Backend
+          {t("projects.backend")}
         </button>
       </nav>
 
@@ -103,7 +106,7 @@ const Projects = () => {
           key={project.id}
             id={project.id}
             name={project.name}
-            description={project.description}
+            descriptionKey={project.descriptionKey}
             screenShot={project.screenShot}
             githubLink={project.githubLink}
             liveLink={project.liveLink}

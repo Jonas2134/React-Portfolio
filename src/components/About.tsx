@@ -1,3 +1,4 @@
+import { Trans, useTranslation } from "react-i18next";
 import { ScrollText } from "lucide-react";
 import picture from "../assets/img/jonas-stiefer.png";
 
@@ -17,21 +18,20 @@ function getAge(): number {
 }
 
 const About = () => {
-  const headline = "<About me />";
+  const { t } = useTranslation();
 
   return (
     <section id="about" className="flex justify-center gap-4 rounded inset-shadow-card backdrop-blur-md p-7">
-      <img src={picture} alt="Portrait of the developer" loading="lazy" className="rounded-4xl h-56" />
+      <img src={picture} alt={t("about.portraitAlt")} loading="lazy" className="rounded-4xl h-56" />
       <aside className="max-w-lg flex flex-col items-center gap-4">
-        <h2>{headline}</h2>
+        <h2>{t("about.headline")}</h2>
         <p>
-          My Name is Jonas Stiefer. I'm <strong>{getAge()}</strong> years old
-          and i'm an emerging <strong>Web-Full-Stack Developer!</strong> <br />I
-          come from <strong>Luxembourg</strong> and i'm motivated to take on
-          your challenges.
+          <Trans i18nKey="about.text" values={{ age: getAge() }}>
+            placeholder
+          </Trans>
         </p>
         <button className="flex items-center gap-2 px-4 py-2 border rounded transition hover:scale-101 hover:shadow-lg hover:cursor-pointer">
-          <span>To my CV</span>
+          <span>{t("about.cvButton")}</span>
           <ScrollText />
         </button>
       </aside>
