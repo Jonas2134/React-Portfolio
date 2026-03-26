@@ -27,7 +27,7 @@ const Toast: React.FC<ToastProps> = ({ toast, onClose, duration = 4000 }) => {
           "animate-toast",
         ].join(" ")}
       >
-        <span className="text-lg">
+        <span className="text-lg" aria-hidden="true">
           {toast.variant === "success" ? "✅" : "❌"}
         </span>
         <span className="text-sm">{toast.message}</span>

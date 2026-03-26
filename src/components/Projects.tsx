@@ -19,7 +19,6 @@ const ProjectCard = ({
   live_link,
 }: ProjectCardProps) => {
   return (
-    <>
       <article
         key={id}
         className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-card backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
@@ -27,7 +26,7 @@ const ProjectCard = ({
         <img
           src={screen_shot}
           className="border border-(--color-text-rgba) rounded"
-          alt="Projekt Screen Shot"
+          alt={`Screenshot of ${name}`}
         />
         <h3 className="underline text-orange-500">{name}</h3>
         <p className="leading-5">{description}</p>
@@ -50,7 +49,6 @@ const ProjectCard = ({
           </a>
         </nav>
       </article>
-    </>
   );
 };
 
@@ -60,7 +58,7 @@ const Projects = () => {
   const headline = "<My Projects />";
 
   return (
-    <section className="flex flex-col items-center gap-6">
+    <section id="projects" className="flex flex-col items-center gap-6">
       <h2 id="projects-title">{headline}</h2>
 
       <nav
