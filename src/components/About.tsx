@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <section id="about" className="flex justify-center gap-4 rounded inset-shadow-card backdrop-blur-md p-7">
-      <img src={picture} alt="Portrait of the developer" className="rounded-4xl h-56" />
+      <img src={picture} alt="Portrait of the developer" loading="lazy" className="rounded-4xl h-56" />
       <aside className="max-w-lg flex flex-col items-center gap-4">
         <h2>{headline}</h2>
         <p>

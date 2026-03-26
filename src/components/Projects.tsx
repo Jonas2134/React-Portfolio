@@ -27,6 +27,7 @@ const ProjectCard = ({
           src={screenShot}
           className="border border-(--color-text-rgba) rounded"
           alt={`Screenshot of ${name}`}
+          loading="lazy"
         />
         <h3 className="underline text-orange-500">{name}</h3>
         <p className="leading-5">{description}</p>
