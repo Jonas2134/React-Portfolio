@@ -40,8 +40,7 @@ const EmailForm = () => {
         variant: "success",
         message: "Deine Nachricht wurde gesendet!",
       });
-    } catch (error) {
-      console.log(error);
+    } catch {
       setToast({
         variant: "error",
         message: "Fehler beim Senden — bitte erneut versuchen.",

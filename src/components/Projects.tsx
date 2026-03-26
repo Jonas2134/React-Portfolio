@@ -5,18 +5,18 @@ type ProjectCardProps = {
   id: number;
   name: string;
   description: string;
-  screen_shot: string;
-  github_link: string;
-  live_link: string;
+  screenShot: string;
+  githubLink: string;
+  liveLink: string;
 };
 
 const ProjectCard = ({
   id,
   name,
   description,
-  screen_shot,
-  github_link,
-  live_link,
+  screenShot,
+  githubLink,
+  liveLink,
 }: ProjectCardProps) => {
   return (
       <article
@@ -24,7 +24,7 @@ const ProjectCard = ({
         className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-card backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
       >
         <img
-          src={screen_shot}
+          src={screenShot}
           className="border border-(--color-text-rgba) rounded"
           alt={`Screenshot of ${name}`}
         />
@@ -32,7 +32,7 @@ const ProjectCard = ({
         <p className="leading-5">{description}</p>
         <nav className="flex justify-around w-full mt-2">
           <a
-            href={github_link}
+            href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 transition hover:underline"
@@ -40,7 +40,7 @@ const ProjectCard = ({
             <strong>View on GitHub</strong>
           </a>
           <a
-            href={live_link}
+            href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 transition hover:underline"
@@ -103,9 +103,9 @@ const Projects = () => {
             id={project.id}
             name={project.name}
             description={project.description}
-            screen_shot={project.screen_shot}
-            github_link={project.github_link}
-            live_link={project.live_link}
+            screenShot={project.screenShot}
+            githubLink={project.githubLink}
+            liveLink={project.liveLink}
           />
         ))}
       </section>

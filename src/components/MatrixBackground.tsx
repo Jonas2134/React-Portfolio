@@ -12,7 +12,8 @@ const MatrixBackground = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d")!;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
     const letters = "01";
     const fontSize = 14;
     const columns = Math.floor(window.innerWidth / fontSize);
