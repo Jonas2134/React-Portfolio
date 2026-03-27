@@ -21,19 +21,16 @@
   },
   "projects": {
     "headline": "<My Projects />",
-    "frontend": "Frontend",
-    "backend": "Backend",
     "viewGithub": "View on GitHub",
     "viewLive": "View Live!",
     "screenshotAlt": "Screenshot of {{name}}",
-    "categoryLabel": "Project categories",
-    "frontendJoinDesc": "TODO",
-    "frontendSharkieDesc": "TODO",
-    "frontendDabubbleDesc": "TODO",
-    "backendKanmindDesc": "TODO",
-    "backendCoderrDesc": "TODO",
-    "backendQuizlyDesc": "TODO",
-    "backendVideoflixDesc": "TODO"
+    "joinDesc": "TODO",
+    "sharkieDesc": "TODO",
+    "dabubbleDesc": "TODO",
+    "kanmindDesc": "TODO",
+    "coderrDesc": "TODO",
+    "quizlyDesc": "TODO",
+    "videoflixDesc": "TODO"
   },
   "contact": {
     "headline": "<Get in Touch />",
