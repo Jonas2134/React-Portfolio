@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const languages = ["en", "de", "fr", "lb"] as const;
+const languages = ["en", "de", "fr", "lux"] as const;
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();

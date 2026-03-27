@@ -1,0 +1,74 @@
+{
+  "header": {
+    "about": "Iwwer mech",
+    "skills": "Fäegkeeten",
+    "projects": "Projeten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "<Moien, ech sinn de Jonas 👋>",
+    "passion": "<Spezialiséiert op modern, responsive a benotzerfrëndlech Frontends an sécher a skalierbarer Backends. />",
+    "role": "Web-Full-Stack Entwéckler"
+  },
+  "about": {
+    "headline": "<Iwwer mech />",
+    "text": "Mäin Numm ass Jonas Stiefer. Ech sinn <strong>{{age}}</strong> Joer al an en opstriewenden <strong>Web-Full-Stack Entwéckler!</strong> <br/>Ech kommen aus <strong>Lëtzebuerg</strong> an ech si motivéiert, Är Erausfuerderungen unzehuelen.",
+    "cvButton": "Zu mengem Liewenslaf",
+    "portraitAlt": "Portrait vum Entwéckler"
+  },
+  "skills": {
+    "headline": "<Meng Fäegkeeten />"
+  },
+  "projects": {
+    "headline": "<Meng Projeten />",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "viewGithub": "Op GitHub kucken",
+    "viewLive": "Live kucken!",
+    "screenshotAlt": "Screenshot vu {{name}}",
+    "categoryLabel": "Projetskategorien",
+    "frontendJoinDesc": "TODO",
+    "frontendSharkieDesc": "TODO",
+    "frontendDabubbleDesc": "TODO",
+    "backendKanmindDesc": "TODO",
+    "backendCoderrDesc": "TODO",
+    "backendQuizlyDesc": "TODO",
+    "backendVideoflixDesc": "TODO"
+  },
+  "contact": {
+    "headline": "<Kontakt ophuelen />",
+    "togetherHeadline": "Loosst eis zesumme schaffen",
+    "togetherText": "Ech freeë mech ëmmer iwwer nei Kontakter a spannend Projeten. Schéckt mir einfach eng Noriicht iwwert de Formulaire oder verbënnt Iech mat mir op LinkedIn oder per E-Mail.",
+    "socialLabel": "Sozial Linken",
+    "formLabel": "Kontaktformulaire",
+    "formHeadline": "Kontaktéiert mech direkt",
+    "nameLabel": "Wéi heescht Dir?",
+    "namePlaceholder": "Ären Numm",
+    "nameError": "Den Numm muss op d'mannst 2 Zeechen hunn.",
+    "emailLabel": "Wéi ass Är E-Mail?",
+    "emailPlaceholder": "äremail@email.com",
+    "emailError": "Gitt w.e.g. eng gëlteg E-Mail-Adress an.",
+    "messageLabel": "Wéi kann ech Iech hëllefen?",
+    "messagePlaceholder": "Moien, ech interesséiere mech fir...",
+    "messageError": "D'Noriicht muss op d'mannst 10 Zeechen hunn.",
+    "submitButton": "Noriicht schécken",
+    "successToast": "Är Noriicht gouf geschéckt!",
+    "errorToast": "Feeler beim Schécken — probéiert et w.e.g. nach eng Kéier."
+  },
+  "footer": {
+    "contactHeadline": "Kontaktéiert mech",
+    "email": "E-Mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2025 Jonas Stiefer. All Rechter reservéiert."
+  },
+  "darkMode": {
+    "switchToLight": "Op hell Modus wiesselen",
+    "switchToDark": "Op donkel Modus wiesselen"
+  },
+  "aria": {
+    "logo": "Portfolio-Logo",
+    "mainNav": "Haaptnavigatioun",
+    "footerNav": "Footer-Navigatioun"
+  }
+}

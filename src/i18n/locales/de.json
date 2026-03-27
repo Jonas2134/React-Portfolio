@@ -1,32 +1,32 @@
 {
   "header": {
-    "about": "TODO",
-    "skills": "TODO",
-    "projects": "TODO",
-    "contact": "TODO"
+    "about": "Über mich",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "contact": "Kontakt"
   },
   "hero": {
-    "greeting": "TODO",
-    "passion": "TODO",
-    "role": "TODO"
+    "greeting": "<Hi, ich bin Jonas 👋>",
+    "passion": "<Spezialisiert auf moderne, responsive und benutzerfreundliche Frontends sowie sichere und skalierbare Backends. />",
+    "role": "Web-Full-Stack Entwickler"
   },
   "about": {
-    "headline": "TODO",
-    "text": "TODO",
-    "cvButton": "TODO",
-    "portraitAlt": "TODO"
+    "headline": "<Über mich />",
+    "text": "Mein Name ist Jonas Stiefer. Ich bin <strong>{{age}}</strong> Jahre alt und ein aufstrebender <strong>Web-Full-Stack Entwickler!</strong> <br/>Ich komme aus <strong>Luxemburg</strong> und bin motiviert, mich deinen Herausforderungen zu stellen.",
+    "cvButton": "Zu meinem Lebenslauf",
+    "portraitAlt": "Portrait des Entwicklers"
   },
   "skills": {
-    "headline": "TODO"
+    "headline": "<Meine Skills />"
   },
   "projects": {
-    "headline": "TODO",
+    "headline": "<Meine Projekte />",
     "frontend": "Frontend",
     "backend": "Backend",
-    "viewGithub": "TODO",
-    "viewLive": "TODO",
-    "screenshotAlt": "TODO {{name}}",
-    "categoryLabel": "TODO",
+    "viewGithub": "Auf GitHub ansehen",
+    "viewLive": "Live ansehen!",
+    "screenshotAlt": "Screenshot von {{name}}",
+    "categoryLabel": "Projektkategorien",
     "frontendJoinDesc": "TODO",
     "frontendSharkieDesc": "TODO",
     "frontendDabubbleDesc": "TODO",
@@ -36,39 +36,39 @@
     "backendVideoflixDesc": "TODO"
   },
   "contact": {
-    "headline": "TODO",
-    "togetherHeadline": "TODO",
-    "togetherText": "TODO",
-    "socialLabel": "TODO",
-    "formLabel": "TODO",
-    "formHeadline": "TODO",
-    "nameLabel": "TODO",
-    "namePlaceholder": "TODO",
-    "nameError": "TODO",
-    "emailLabel": "TODO",
-    "emailPlaceholder": "TODO",
-    "emailError": "TODO",
-    "messageLabel": "TODO",
-    "messagePlaceholder": "TODO",
-    "messageError": "TODO",
-    "submitButton": "TODO",
-    "successToast": "TODO",
-    "errorToast": "TODO"
+    "headline": "<Kontakt aufnehmen />",
+    "togetherHeadline": "Lass uns zusammenarbeiten",
+    "togetherText": "Ich freue mich immer über neue Kontakte und spannende Projekte. Schreib mir einfach über das Formular oder verbinde dich mit mir auf LinkedIn oder per E-Mail.",
+    "socialLabel": "Soziale Links",
+    "formLabel": "Kontaktformular",
+    "formHeadline": "Kontaktiere mich direkt",
+    "nameLabel": "Wie heißt du?",
+    "namePlaceholder": "Dein Name",
+    "nameError": "Der Name muss mindestens 2 Zeichen lang sein.",
+    "emailLabel": "Wie lautet deine E-Mail?",
+    "emailPlaceholder": "deineemail@email.com",
+    "emailError": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "messageLabel": "Wie kann ich dir helfen?",
+    "messagePlaceholder": "Hallo, ich interessiere mich für...",
+    "messageError": "Die Nachricht muss mindestens 10 Zeichen lang sein.",
+    "submitButton": "Nachricht senden",
+    "successToast": "Deine Nachricht wurde gesendet!",
+    "errorToast": "Fehler beim Senden — bitte versuche es erneut."
   },
   "footer": {
-    "contactHeadline": "TODO",
-    "email": "Email",
-    "linkedin": "Linkedin",
+    "contactHeadline": "Kontaktiere mich",
+    "email": "E-Mail",
+    "linkedin": "LinkedIn",
     "github": "GitHub",
-    "copyright": "TODO"
+    "copyright": "© 2025 Jonas Stiefer. Alle Rechte vorbehalten."
   },
   "darkMode": {
-    "switchToLight": "TODO",
-    "switchToDark": "TODO"
+    "switchToLight": "Zum hellen Modus wechseln",
+    "switchToDark": "Zum dunklen Modus wechseln"
   },
   "aria": {
-    "logo": "TODO",
-    "mainNav": "TODO",
-    "footerNav": "TODO"
+    "logo": "Portfolio-Logo",
+    "mainNav": "Hauptnavigation",
+    "footerNav": "Footer-Navigation"
   }
 }
