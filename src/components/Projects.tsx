@@ -11,8 +11,9 @@ type ProjectCardProps = {
   descriptionKey: string;
   techStack: string[];
   screenShot: string;
-  githubLinks: GithubLink[];
-  liveLink: string;
+  githubLinks?: GithubLink[];
+  liveLink?: string;
+  comingSoon?: boolean;
 };
 
 const ProjectCard = ({
@@ -22,6 +23,7 @@ const ProjectCard = ({
   screenShot,
   githubLinks,
   liveLink,
+  comingSoon,
 }: ProjectCardProps) => {
   const { t } = useTranslation();
 
@@ -47,28 +49,36 @@ const ProjectCard = ({
         ))}
       </ul>
       <p className="leading-5">{t(descriptionKey)}</p>
-      <nav className="flex justify-around w-full mt-2">
-        {githubLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${link.label} – ${name}`}
-            className="text-blue-600 dark:text-blue-400 transition hover:underline"
-          >
-            <strong>{link.label}</strong>
-          </a>
-        ))}
-        <a
-          href={liveLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 dark:text-blue-400 transition hover:underline"
-        >
-          <strong>{t("projects.viewLive")}</strong>
-        </a>
-      </nav>
+      {comingSoon ? (
+        <p className="mt-2 text-sm italic text-gray-500 dark:text-gray-400">
+          {t("projects.comingSoon")}
+        </p>
+      ) : (
+        <nav className="flex justify-around w-full mt-2">
+          {githubLinks?.map((link) => (
+            <a
+              key={link.label}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${link.label} – ${name}`}
+              className="text-blue-600 dark:text-blue-400 transition hover:underline"
+            >
+              <strong>{link.label}</strong>
+            </a>
+          ))}
+          {liveLink && (
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 transition hover:underline"
+            >
+              <strong>{t("projects.viewLive")}</strong>
+            </a>
+          )}
+        </nav>
+      )}
     </article>
   );
 };
@@ -92,8 +102,9 @@ const Projects = () => {
             descriptionKey={project.descriptionKey}
             techStack={project.techStack}
             screenShot={project.screenShot}
-            githubLinks={project.githubLinks}
-            liveLink={project.liveLink}
+            githubLinks={"githubLinks" in project ? project.githubLinks : undefined}
+            liveLink={"liveLink" in project ? project.liveLink : undefined}
+            comingSoon={"comingSoon" in project ? project.comingSoon : undefined}
           />
         ))}
       </section>

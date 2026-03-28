@@ -22,11 +22,7 @@ export const projects = [
     name: "DABubble",
     descriptionKey: "projects.dabubbleDesc",
     techStack: ["Angular", "TypeScript", "Firebase"],
-    githubLinks: [
-      { label: "Frontend", url: "#" },
-      { label: "Backend", url: "#" },
-    ],
-    liveLink: "#",
+    comingSoon: true,
     screenShot: "#",
   },
   {
@@ -34,17 +30,13 @@ export const projects = [
     descriptionKey: "projects.quizlyDesc",
     techStack: ["Django", "Python"],
     githubLinks: [{ label: "GitHub", url: "#" }],
-    liveLink: "#",
     screenShot: "#",
   },
   {
     name: "Videoflix",
     descriptionKey: "projects.videoflixDesc",
     techStack: ["Django", "Python", "PostgreSQL"],
-    githubLinks: [
-      { label: "Frontend", url: "#" },
-      { label: "Backend", url: "#" },
-    ],
+    githubLinks: [{ label: "GitHub", url: "#" }],
     liveLink: "#",
     screenShot: "#",
   },
