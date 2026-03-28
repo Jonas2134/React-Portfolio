@@ -1,30 +1,32 @@
 import { useTranslation } from "react-i18next";
 import { projects } from "../data/projects";
 
+type GithubLink = {
+  label: string;
+  url: string;
+};
+
 type ProjectCardProps = {
-  id: number;
   name: string;
   descriptionKey: string;
   techStack: string[];
   screenShot: string;
-  githubLink: string;
+  githubLinks: GithubLink[];
   liveLink: string;
 };
 
 const ProjectCard = ({
-  id,
   name,
   descriptionKey,
   techStack,
   screenShot,
-  githubLink,
+  githubLinks,
   liveLink,
 }: ProjectCardProps) => {
   const { t } = useTranslation();
 
   return (
     <article
-      key={id}
       className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-card backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
     >
       <img
@@ -46,14 +48,18 @@ const ProjectCard = ({
       </ul>
       <p className="leading-5">{t(descriptionKey)}</p>
       <nav className="flex justify-around w-full mt-2">
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 dark:text-blue-400 transition hover:underline"
-        >
-          <strong>{t("projects.viewGithub")}</strong>
-        </a>
+        {githubLinks.map((link) => (
+          <a
+            key={link.label}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${link.label} – ${name}`}
+            className="text-blue-600 dark:text-blue-400 transition hover:underline"
+          >
+            <strong>{link.label}</strong>
+          </a>
+        ))}
         <a
           href={liveLink}
           target="_blank"
@@ -81,13 +87,12 @@ const Projects = () => {
       >
         {projects.map((project) => (
           <ProjectCard
-            key={project.id}
-            id={project.id}
+            key={project.name}
             name={project.name}
             descriptionKey={project.descriptionKey}
             techStack={project.techStack}
             screenShot={project.screenShot}
-            githubLink={project.githubLink}
+            githubLinks={project.githubLinks}
             liveLink={project.liveLink}
           />
         ))}
