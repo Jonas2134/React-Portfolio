@@ -24,11 +24,11 @@
     "viewGithub": "View on GitHub",
     "viewLive": "View Live!",
     "screenshotAlt": "Screenshot of {{name}}",
-    "joinDesc": "TODO",
-    "sharkieDesc": "TODO",
-    "dabubbleDesc": "TODO",
-    "quizlyDesc": "TODO",
-    "videoflixDesc": "TODO",
+    "joinDesc": "Join is a Kanban board in the style of Trello or Jira that I developed independently as a full-stack project. The frontend is built with Vanilla TypeScript and Tailwind, the backend with Django and PostgreSQL. The project is hosted in a Docker container on a Linux server.",
+    "sharkieDesc": "Sharkie is a 2D browser game developed with Vanilla JavaScript. The player controls a small shark who must defeat enemies within a time limit before the final boss appears.",
+    "dabubbleDesc": "DABubble is a messenger in the style of Slack or Discord, developed as a group project in Angular with TypeScript and SASS. Real-time communication is powered by Firebase Firestore.",
+    "quizlyDesc": "Quizly is a quiz app with AI integration. Users can submit a YouTube link whose audio is transcribed with OpenAI Whisper. From the transcription, Google GenAI automatically generates a quiz. The backend was built with Django and Python.",
+    "videoflixDesc": "Videoflix is a video streaming platform for which I developed the complete backend with Django and PostgreSQL. The application runs containerized with Docker on a Linux server.",
     "comingSoon": "Coming soon — currently being reworked"
   },
   "contact": {
