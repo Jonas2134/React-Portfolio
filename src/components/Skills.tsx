@@ -19,7 +19,7 @@ const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="flex flex-col items-center gap-4">
+    <section id="skills" className="flex flex-col items-center gap-4 px-2 sm:px-0">
       <h2 className="text-orange-500">{t("skills.headline")}</h2>
       <ul className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-6 w-full">
         {skills.map((skill) => (

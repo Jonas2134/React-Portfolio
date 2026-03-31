@@ -21,9 +21,9 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="flex justify-center gap-4 rounded inset-shadow-card backdrop-blur-md p-7">
+    <section id="about" className="flex flex-col md:flex-row items-center justify-center gap-4 rounded inset-shadow-card backdrop-blur-md p-7">
       <img src={picture} alt={t("about.portraitAlt")} loading="lazy" className="rounded-4xl h-56" />
-      <aside className="max-w-lg flex flex-col items-center gap-4">
+      <div className="max-w-lg flex flex-col items-center gap-4">
         <h2>{t("about.headline")}</h2>
         <p>
           <Trans i18nKey="about.text" values={{ age: getAge() }}>
@@ -34,7 +34,7 @@ const About = () => {
           <span>{t("about.cvButton")}</span>
           <ScrollText />
         </button>
-      </aside>
+      </div>
     </section>
   );
 };

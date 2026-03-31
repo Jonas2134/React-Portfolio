@@ -50,11 +50,11 @@ const ProjectCard = ({
       </ul>
       <p className="leading-5">{t(descriptionKey)}</p>
       {comingSoon ? (
-        <p className="mt-2 text-sm italic text-gray-500 dark:text-gray-400">
+        <p className="text-sm italic text-gray-500 dark:text-gray-400">
           {t("projects.comingSoon")}
         </p>
       ) : (
-        <nav className="flex justify-around w-full mt-2">
+        <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 w-full">
           {githubLinks?.map((link) => (
             <a
               key={link.label}
@@ -62,7 +62,7 @@ const ProjectCard = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${link.label} – ${name}`}
-              className="text-blue-600 dark:text-blue-400 transition hover:underline"
+              className="basis-[calc(50%-0.5rem)] text-center text-blue-600 dark:text-blue-400 transition hover:underline"
             >
               <strong>{link.label}</strong>
             </a>
@@ -72,7 +72,7 @@ const ProjectCard = ({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 transition hover:underline"
+              className="basis-[calc(50%-0.5rem)] text-center text-blue-600 dark:text-blue-400 transition hover:underline"
             >
               <strong>{t("projects.viewLive")}</strong>
             </a>
@@ -90,10 +90,10 @@ const Projects = () => {
     <section id="projects" className="flex flex-col items-center gap-6">
       <h2 id="projects-title">{t("projects.headline")}</h2>
 
-      <section
+      <div
         id="projects-list"
         aria-labelledby="projects-title"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 sm:px-0"
       >
         {projects.map((project) => (
           <ProjectCard
@@ -107,7 +107,7 @@ const Projects = () => {
             comingSoon={"comingSoon" in project ? project.comingSoon : undefined}
           />
         ))}
-      </section>
+      </div>
     </section>
   );
 };
