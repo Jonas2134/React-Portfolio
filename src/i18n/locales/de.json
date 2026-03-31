@@ -66,6 +66,8 @@
   "aria": {
     "logo": "Portfolio-Logo",
     "mainNav": "Hauptnavigation",
-    "footerNav": "Footer-Navigation"
+    "footerNav": "Footer-Navigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   }
 }

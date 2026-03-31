@@ -49,4 +49,18 @@
   .animate-rotate-slow {
     animation: rotate-slow 20s linear infinite;
   }
+
+  @keyframes dropdown-in {
+    from {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-dropdown-in {
+    animation: dropdown-in 0.2s ease-out forwards;
+  }
 }
