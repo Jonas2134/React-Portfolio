@@ -21,7 +21,7 @@ const Skills = () => {
   return (
     <section id="skills" className="flex flex-col items-center gap-4">
       <h2 className="text-orange-500">{t("skills.headline")}</h2>
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+      <ul className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-6 w-full">
         {skills.map((skill) => (
           <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
         ))}
