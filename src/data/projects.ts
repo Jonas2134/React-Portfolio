@@ -23,7 +23,7 @@ export const projects = [
     descriptionKey: "projects.dabubbleDesc",
     techStack: ["Angular", "TypeScript", "SASS", "Firebase"],
     comingSoon: true,
-    screenShot: "#",
+    screenShot: "/img/da_bubble-screen.png",
   },
   {
     name: "Quizly",

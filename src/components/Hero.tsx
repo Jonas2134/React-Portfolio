@@ -5,7 +5,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative flex items-center justify-center py-35 w-full border-y-1 border-text-rgba">
+    <section className="relative flex items-center justify-center py-35 w-full border-b-1 border-text-rgba">
       <MatrixBackground />
       <div className="flex flex-col items-center justify-center px-4">
         <p>{t("hero.greeting")}</p>

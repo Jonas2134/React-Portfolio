@@ -15,7 +15,7 @@ function App() {
       <div className="z-1 w-full flex flex-col">
         <Header />
         <main className="w-full">
-          <div className="max-w-7xl w-full mx-auto grid grid-cols-1 gap-8 text-center p-6.25">
+          <div className="max-w-7xl w-full mx-auto grid grid-cols-1 gap-8 text-center pb-6.25 sm:px-6.25">
             <Hero />
             <About />
             <Skills />
