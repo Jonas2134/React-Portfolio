@@ -6,7 +6,10 @@ const FRAME_INTERVAL = 50;
 const MatrixBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const getBackgroundColor = () => {
-    const isDarkMode = document.documentElement.classList.contains("dark");
+    const stored = localStorage.getItem("theme");
+    const isDarkMode =
+      stored === "dark" ||
+      (stored === null && window.matchMedia("(prefers-color-scheme: dark)").matches);
     return isDarkMode ? "rgba(47, 72, 88, 0.15)" : "rgba(231, 233, 223, 0.15)";
   };
   const [bgColor, setBgColor] = useState(getBackgroundColor);
