@@ -33,7 +33,7 @@ const ProjectCard = ({
     >
       <img
         src={screenShot}
-        className="border border-(--color-text-rgba) rounded"
+        className="w-full h-48 object-cover border border-(--color-text-rgba) rounded"
         alt={t("projects.screenshotAlt", { name })}
         loading="lazy"
       />

@@ -56,7 +56,8 @@
     "email": "E-Mail",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "copyright": "© 2025 Jonas Stiefer. All Rechter reservéiert."
+    "copyright": "© 2025 Jonas Stiefer. All Rechter reservéiert.",
+    "builtWith": "Erstellt mat React, TypeScript & Tailwind"
   },
   "darkMode": {
     "switchToLight": "Op hell Modus wiesselen",

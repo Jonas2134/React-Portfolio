@@ -32,16 +32,8 @@ export const skills = [
     icon: "/icons/react.svg",
   },
   {
-    name: "Vue",
-    icon: "/icons/vuejs.svg",
-  },
-  {
     name: "Django",
     icon: "/icons/django.svg",
-  },
-  {
-    name: "Material Design",
-    icon: "/icons/material-design.svg",
   },
   {
     name: "Tailwind",

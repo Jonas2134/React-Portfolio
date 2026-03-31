@@ -12,7 +12,10 @@ function Footer() {
           <a href="#">{t("footer.linkedin")}</a>
           <a href="#">{t("footer.github")}</a>
         </nav>
-        <p>{t("footer.copyright")}</p>
+        <div className="text-right">
+          <p className="text-sm text-(--color-text-rgba)">{t("footer.builtWith")}</p>
+          <p>{t("footer.copyright")}</p>
+        </div>
       </div>
     </footer>
   );

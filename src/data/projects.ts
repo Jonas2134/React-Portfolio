@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Join",
     descriptionKey: "projects.joinDesc",
-    techStack: ["Vite", "Vanilla TypeScript", "Tailwind", "Django", "PostgreSQL", "Linux"],
+    techStack: ["Vite", "Vanilla TypeScript", "Tailwind", "Python", "Django", "PostgreSQL", "Docker", "Linux"],
     githubLinks: [
       { label: "Frontend", url: "https://github.com/Jonas2134/Join-Frontend" },
       { label: "Backend", url: "https://github.com/Jonas2134/Join-Backend" },
@@ -21,21 +21,21 @@ export const projects = [
   {
     name: "DABubble",
     descriptionKey: "projects.dabubbleDesc",
-    techStack: ["Angular", "TypeScript", "Firebase"],
+    techStack: ["Angular", "TypeScript", "SASS", "Firebase"],
     comingSoon: true,
     screenShot: "#",
   },
   {
     name: "Quizly",
     descriptionKey: "projects.quizlyDesc",
-    techStack: ["Django", "Python"],
+    techStack: ["Django", "Python", "Whisper", "Google GenAI"],
     githubLinks: [{ label: "GitHub", url: "https://github.com/Jonas2134/Quizly" }],
     screenShot: "/img/quizly-screen.png",
   },
   {
     name: "Videoflix",
     descriptionKey: "projects.videoflixDesc",
-    techStack: ["Django", "Python", "PostgreSQL"],
+    techStack: ["Django", "Python", "PostgreSQL", "Docker", "Linux"],
     githubLinks: [{ label: "GitHub", url: "https://github.com/Jonas2134/Videoflix" }],
     liveLink: "https://videoflix.jonas-stiefer.com",
     screenShot: "/img/videoflix-screen.png",
