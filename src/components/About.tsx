@@ -17,6 +17,8 @@ function getAge(): number {
   return age;
 }
 
+const cvUrl = "";
+
 const About = () => {
   const { t } = useTranslation();
 
@@ -30,10 +32,17 @@ const About = () => {
             placeholder
           </Trans>
         </p>
-        <button className="flex items-center gap-2 px-4 py-2 border rounded transition hover:scale-101 hover:shadow-lg hover:cursor-pointer">
-          <span>{t("about.cvButton")}</span>
-          <ScrollText />
-        </button>
+        {cvUrl && (
+          <a
+            href={cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 border rounded transition hover:scale-101 hover:shadow-lg hover:cursor-pointer"
+          >
+            <span>{t("about.cvButton")}</span>
+            <ScrollText />
+          </a>
+        )}
       </div>
     </section>
   );

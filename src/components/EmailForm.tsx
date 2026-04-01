@@ -54,7 +54,7 @@ const EmailForm = () => {
 
   return (
     <>
-      <section className="py-10 px-6">
+      <div className="py-10 px-6">
         <form
           ref={formRef}
           onSubmit={sendEmail}
@@ -147,7 +147,7 @@ const EmailForm = () => {
             )}
           </button>
         </form>
-      </section>
+      </div>
 
       <Toast
         toast={toast}

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -8,6 +10,12 @@ import Contact from "./components/Contact";
 import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.resolvedLanguage ?? i18n.language;
+  }, [i18n.resolvedLanguage, i18n.language]);
+
   return (
     <div className="text-text h-full transition-all">
       <AnimatedBackground />

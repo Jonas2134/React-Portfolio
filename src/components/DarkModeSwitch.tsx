@@ -28,7 +28,7 @@ const DarkModeSwitch = () => {
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label={theme === "dark" ? t("darkMode.switchToLight") : t("darkMode.switchToDark")}
-      className="p-2 rounded bg-switch hover:bg-hover-switch text-text flex items-center gap-2 transition-all hover:cursor-pointer inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] shadow-md hover:shadow-lg"
+      className="p-2 rounded bg-switch hover:bg-hover-switch text-text flex items-center gap-2 transition-all hover:cursor-pointer inset-shadow-card shadow-md hover:shadow-lg"
     >
       {theme === "dark" ? (
         <Moon size={18} />

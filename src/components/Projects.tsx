@@ -38,7 +38,7 @@ const ProjectCard = ({
         loading="lazy"
       />
       <h3 className="underline text-orange-500">{name}</h3>
-      <ul className="flex flex-wrap justify-center gap-2" aria-label={`Tech stack for ${name}`}>
+      <ul className="flex flex-wrap justify-center gap-2" aria-label={t("projects.techStackLabel", { name })}>
         {techStack.map((tech) => (
           <li
             key={tech}

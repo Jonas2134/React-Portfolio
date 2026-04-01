@@ -16,7 +16,7 @@ const ContactNav: FC<ContactNavProps> = ({ linkedinUrl, githubUrl, email }) => {
       className="flex flex-col gap-8 py-10 px-6"
       aria-labelledby="contact-heading"
     >
-      <h3 className="text-rose-500 pb-3 underline">{t("contact.togetherHeadline")}</h3>
+      <h3 id="contact-heading" className="text-rose-500 pb-3 underline">{t("contact.togetherHeadline")}</h3>
       <p>{t("contact.togetherText")}</p>
 
       <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 w-full" aria-label={t("contact.socialLabel")}>

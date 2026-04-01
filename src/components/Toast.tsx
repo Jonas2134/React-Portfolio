@@ -11,10 +11,11 @@ type ToastProps = {
 
 const Toast: React.FC<ToastProps> = ({ toast, onClose, duration = 4000 }) => {
   useEffect(() => {
+    if (!toast) return;
     const id = window.setTimeout(() => onClose(), duration);
     return () => clearTimeout(id);
-  }, [onClose, duration]);
-  
+  }, [toast, onClose, duration]);
+
   if (!toast) return null;
   if (typeof document === "undefined") return null;
 

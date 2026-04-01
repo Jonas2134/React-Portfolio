@@ -23,6 +23,7 @@
     "headline": "<Meng Projeten />",
     "viewGithub": "Op GitHub kucken",
     "viewLive": "Live kucken!",
+    "techStackLabel": "Tech-Stack vu {{name}}",
     "screenshotAlt": "Screenshot vu {{name}}",
     "joinDesc": "Join ass e Kanban-Board am Stil vu Trello oder Jira, dat ech als Full-Stack-Projet eleng entwéckelt hunn. De Frontend baséiert op Vanilla TypeScript mat Tailwind, de Backend op Django mat PostgreSQL. De Projet ass an engem Docker-Container op engem Linux-Server gehost.",
     "sharkieDesc": "Sharkie ass en 2D-Browserspill, entwéckelt mat Vanilla JavaScript. De Spiller steiert e klengen Hai, deen bannent engem Zäitlimit Géigner besige muss, ier den Endboss erschéngt.",
@@ -56,7 +57,7 @@
     "email": "E-Mail",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "copyright": "© 2025 Jonas Stiefer. All Rechter reservéiert.",
+    "copyright": "© 2026 Jonas Stiefer. All Rechter reservéiert.",
     "builtWith": "Erstellt mat React, TypeScript & Tailwind"
   },
   "darkMode": {

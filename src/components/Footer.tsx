@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Linkedin, Github, Mail } from "lucide-react";
+import { contact } from "../data/contact";
 
 function Footer() {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ function Footer() {
           className="flex gap-4"
         >
           <a
-            href="https://www.linkedin.com/in/jonas-stiefer-663b70252/"
+            href={contact.linkedinUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -21,7 +22,7 @@ function Footer() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="https://github.com/Jonas2134"
+            href={contact.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -30,7 +31,7 @@ function Footer() {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="mailto:connect@jonas-stiefer.com"
+            href={`mailto:${contact.email}`}
             aria-label={t("footer.email")}
             className="transition hover:text-orange-500"
           >

@@ -1,24 +1,29 @@
 import { useTranslation } from "react-i18next";
 
-const languages = ["en", "de", "fr", "lux"] as const;
+const languages = [
+  { code: "en", label: "EN" },
+  { code: "de", label: "DE" },
+  { code: "fr", label: "FR" },
+  { code: "lb", label: "LUX" },
+] as const;
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   return (
     <nav aria-label="Language selection" className="flex gap-1">
-      {languages.map((lang) => (
+      {languages.map(({ code, label }) => (
         <button
-          key={lang}
-          onClick={() => i18n.changeLanguage(lang)}
-          aria-current={i18n.resolvedLanguage === lang ? "true" : undefined}
+          key={code}
+          onClick={() => i18n.changeLanguage(code)}
+          aria-current={i18n.resolvedLanguage === code ? "true" : undefined}
           className={`px-2 py-1 rounded text-sm font-medium transition hover:cursor-pointer ${
-            i18n.resolvedLanguage === lang
-              ? "bg-switch text-text inset-shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] shadow-md"
+            i18n.resolvedLanguage === code
+              ? "bg-switch text-text inset-shadow-card shadow-md"
               : "hover:bg-hover-switch"
           }`}
         >
-          {lang.toUpperCase()}
+          {label}
         </button>
       ))}
     </nav>
