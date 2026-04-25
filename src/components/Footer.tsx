@@ -41,6 +41,15 @@ function Footer() {
 
         <div className="flex flex-col items-center gap-1 md:items-end">
           <p className="text-sm text-center">{t("footer.builtWith")}</p>
+          <a
+            href="https://github.com/Jonas2134/react-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("footer.viewSource")}
+            className="text-sm text-center text-blue-600 dark:text-blue-400 transition hover:underline"
+          >
+            {t("footer.viewSource")}
+          </a>
           <p className="text-base text-center">{t("footer.copyright")}</p>
         </div>
       </div>

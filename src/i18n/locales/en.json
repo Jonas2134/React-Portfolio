@@ -58,7 +58,8 @@
     "linkedin": "Linkedin",
     "github": "GitHub",
     "copyright": "\u00a9 2026 Jonas Stiefer. All rights reserved.",
-    "builtWith": "Built with React, TypeScript & Tailwind"
+    "builtWith": "Built with React, TypeScript, Tailwind & EmailJS",
+    "viewSource": "View source on GitHub"
   },
   "darkMode": {
     "switchToLight": "Switch to light mode",
