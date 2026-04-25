@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { projects } from "../data/projects";
 
-type GithubLink = {
+export type GithubLink = {
   label: string;
   url: string;
 };
 
-type ProjectCardProps = {
+export type Project = {
   name: string;
   descriptionKey: string;
   techStack: string[];
@@ -24,12 +24,12 @@ const ProjectCard = ({
   githubLinks,
   liveLink,
   comingSoon,
-}: ProjectCardProps) => {
+}: Project) => {
   const { t } = useTranslation();
 
   return (
     <article
-      className="flex flex-col items-center justify-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-card backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
+      className="flex flex-col items-center gap-4 px-4 py-8 rounded shadow-md inset-shadow-card backdrop-blur-md hover:shadow-lg hover:scale-101 transition"
     >
       <img
         src={screenShot}
@@ -102,9 +102,9 @@ const Projects = () => {
             descriptionKey={project.descriptionKey}
             techStack={project.techStack}
             screenShot={project.screenShot}
-            githubLinks={"githubLinks" in project ? project.githubLinks : undefined}
-            liveLink={"liveLink" in project ? project.liveLink : undefined}
-            comingSoon={"comingSoon" in project ? project.comingSoon : undefined}
+            githubLinks={project.githubLinks}
+            liveLink={project.liveLink}
+            comingSoon={project.comingSoon}
           />
         ))}
       </div>

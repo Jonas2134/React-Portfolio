@@ -1,4 +1,6 @@
-export const projects = [
+import type { Project } from "../components/Projects";
+
+export const projects: Project[] = [
   {
     name: "Join",
     descriptionKey: "projects.joinDesc",
@@ -21,8 +23,9 @@ export const projects = [
   {
     name: "DABubble",
     descriptionKey: "projects.dabubbleDesc",
-    techStack: ["Angular", "TypeScript", "SASS", "Firebase"],
-    comingSoon: true,
+    techStack: ["Angular", "TypeScript", "SASS", "Supabase"],
+    githubLinks: [{ label: "GitHub", url: "https://github.com/Jonas2134/DABubble" }],
+    liveLink: "https://da-bubble.jonas-stiefer.com",
     screenShot: "/img/da_bubble-screen.png",
   },
   {

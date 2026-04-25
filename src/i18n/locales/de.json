@@ -27,7 +27,7 @@
     "screenshotAlt": "Screenshot von {{name}}",
     "joinDesc": "Join ist ein Kanban-Board im Stil von Trello oder Jira, das ich als Full-Stack-Projekt eigenständig entwickelt habe. Das Frontend basiert auf Vanilla TypeScript mit Tailwind, das Backend auf Django mit PostgreSQL. Das Projekt wurde in einem Docker-Container auf einem Linux-Server gehostet.",
     "sharkieDesc": "Sharkie ist ein 2D-Browserspiel, entwickelt mit Vanilla JavaScript. Der Spieler steuert einen kleinen Hai, der innerhalb eines Zeitlimits Gegner besiegen muss, bevor der Endboss erscheint.",
-    "dabubbleDesc": "DABubble ist ein Messenger im Stil von Slack oder Discord, entwickelt als Gruppenarbeit in Angular mit TypeScript und SASS. Die Echtzeit-Kommunikation wird über Firebase Firestore realisiert.",
+    "dabubbleDesc": "DABubble ist ein Messenger im Stil von Slack oder Discord. Es wurde ursprünglich entwickelt als Gruppenarbeit entwickelt. Nach einer kruzen Anpassung auf den neusten Stand habe ich die Echtzeit-Kommunikation von Firebase Firestore auf Supabase migriert.",
     "quizlyDesc": "Quizly ist eine Quiz-App mit KI-Integration. Nutzer können einen YouTube-Link eingeben, dessen Audio mit OpenAI Whisper transkribiert wird. Aus der Transkription generiert Google GenAI automatisch ein Quiz. Das Backend wurde mit Django und Python entwickelt.",
     "videoflixDesc": "Videoflix ist eine Video-Streaming-Plattform, für die ich das komplette Backend mit Django und PostgreSQL entwickelt habe. Die Anwendung läuft containerisiert mit Docker auf einem Linux-Server.",
     "comingSoon": "Kommt bald — wird gerade überarbeitet"
